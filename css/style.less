@@ -13,17 +13,26 @@ body {
       border-color: @background-color;
     }
 
-    &.navbar-default .navbar-nav>li>a {
-      color: @text-color;
-    }
+    &.navbar-default {
+      ul.nav {
+        margin-top: 10px;
+      }
 
-    &.navbar-default .navbar-nav>li.active>a {
-      background-color: @text-color;
-      color: @background-color;
-    }
+      .navbar-nav>li {
+        margin: 0 30px;
 
-    &.navbar-default .navbar-nav>li {
-      margin: 0 30px;
+         >a {
+          color: @text-color;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+
+        &.active>a {
+          background-color: @text-color;
+          color: @background-color;
+          border-radius: 4px;
+        }
+      }
     }
 
     .navbar-header {
