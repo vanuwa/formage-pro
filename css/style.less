@@ -1,5 +1,6 @@
 @background-color: #fec155;
 @text-color: #fff;
+@footer-color: #333;
 
 body {
   min-height: 2000px;
@@ -31,6 +32,30 @@ body {
     }
   }
 
+  .fat-black-line {
+    background-color: @footer-color;
+    height: 100px;
+    width: 100%;
+    margin-top: 60px;
+
+    img {
+      margin-top: -46px;
+      margin-right: 14%;
+    }
+  }
+
+  footer.footer {
+    background-color: @background-color;
+    height: 16px;
+    width: 100%;
+    margin-top: 90px;
+    font-size: 8px;
+    padding: 4px;
+
+    .text-muted {
+      color: #888;
+    }
+  }
 }
 
 #product {
