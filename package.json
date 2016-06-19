@@ -1,0 +1,23 @@
+{
+  "name": "fromage-pro",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "main": "index.html",
+  "scripts": {
+    "compile": "haml index.haml index.html --trace && lessc css/style.less css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanuwa/fromage-pro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanuwa/fromage-pro/issues"
+  },
+  "homepage": "https://github.com/vanuwa/fromage-pro#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
