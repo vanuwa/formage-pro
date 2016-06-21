@@ -50,8 +50,8 @@
 
     #product
     .container
-      %img{ :src => "img/product.png", :usemap => "navigation" }
-      %map{ :name => "navigation" }
+      %img{ :src => "img/product.png", :usemap => "banner" }
+      %map{ :name => "banner" }
         %area{ :shape => "rect", :coords => "740, 260, 980, 370", :href => "https://www.amazon.com/dp/B01991EOCK", :alt => "Buy It Now" }
 
     #about
@@ -102,7 +102,11 @@
           %h3.text-uppercase Amazon reviews
 
     .fat-black-line
-      %img.pull-right{ :src => "img/guarantee100.png" }
+      .container
+        %img.buy-now{ :src => "img/button_buy.png", :usemap => "buy" }
+        %map{ :name => "buy" }
+          %area{ :shape => "rect", :coords => "10, 84, 260, 184", :href => "https://www.amazon.com/dp/B01991EOCK", :alt => "Buy It Now" }
+        %img.guarantee-100.pull-right{ :src => "img/guarantee100.png" }
 
 
     %footer.footer.text-center
