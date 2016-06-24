@@ -110,11 +110,39 @@ body {
     .benefits {
       h3 {
         color: @background-color;
+
+        a {
+          color: @background-color;
+        }
       }
 
-      ol li {
-        text-align: justify;
-        margin: 20px 0;
+      .amazon-review {
+        a.small {
+          /*font-size: 65%;*/
+        }
+      }
+
+      ol {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          text-align: justify;
+          margin: 20px 0;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          text-align: justify;
+
+          >span {
+            font-weight: bold;
+          }
+        }
       }
     }
   }
