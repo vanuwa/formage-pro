@@ -56,7 +56,9 @@
 
     #about
     .container
-      %iframe.injected-video{ :src => "https://www.youtube.com/embed/5C8DoJYlCbg?rel=0&amp;showinfo=0", :frameborder => "0" }
+      .row
+        .col-md-offset-2.col-md-8
+          %iframe.injected-video{ :src => "https://www.youtube.com/embed/5C8DoJYlCbg?rel=0&amp;showinfo=0", :frameborder => "0" }
 
     #review
     .container
@@ -87,19 +89,39 @@
           %img.rotate-45-deg{ :src => "img/cheese_square.png" }
 
       .row.benefits
-        .col-md-6
+        .col-md-5
           %h3.text-uppercase Features & benefits
 
           %ol
-            %li High quality stainless steel blades. Varnished solid acacia wood handles.
-            %li Comfortable to hold and easy to use. Extremely sharp blades make cutting the hardest cheese easy.
-            %li Beautiful and elegant cheese knives to beautify your cheese boards and enhance enjoyment of your cheese courses.
-            %li Complete set of knives for every type of cheese packaged in a high quality gift box. Perfect for storage or all occasions gifts.
-            %li A high end set of cheese knives at a fraction of high street pricing.
+            %li 1) High quality stainless steel blades. Varnished solid acacia wood handles.
+            %li 2) Comfortable to hold and easy to use. Extremely sharp blades make cutting the hardest cheese easy.
+            %li 3) Beautiful and elegant cheese knives to beautify your cheese boards and enhance enjoyment of your cheese courses.
+            %li 4) Complete set of knives for every type of cheese packaged in a high quality gift box. Perfect for storage or all occasions gifts.
+            %li 5) A high end set of cheese knives at a fraction of high street pricing.
 
 
-        .col-md-offset-2.col-md-4
-          %h3.text-uppercase Amazon reviews
+        .col-md-offset-2.col-md-5.amazon-review
+          %h3.text-uppercase
+            %a{ :href => 'https://www.amazon.com/Stainless-Cheese-Knives-Acacia-Handles/product-reviews/B01991EOCK/ref=cm_cr_dp_see_all_summary?ie=UTF8&showViewpoints=1&sortBy=helpful', :target => '_blank' } Amazon reviews
+
+          %ul
+            %li
+              %img{ :src => 'img/stars.png' }
+              %span These look so cool and there is a variety of knives
+              %p I received this product at a discounted rate in exchange for my honest opinion. I was looking for some cheese knives for awhile since my boyfriend and I have been getting into wine and cheeses. These look so cool and there is a variety of knives. I really like the wooden handles too. It gives it a better grip and I like the look of it as well. I would definitely recommend getting these if you're thinking about getting some cheese knives.
+
+            %li
+              %img{ :src => 'img/stars.png' }
+              %span Fits every category of cheese
+              %p These knives are perfect for when you invite guests over during the Holiday season. You can break out the good cheese and crackers. It works on rubbery cheeses like Gouda or crumbles like blue cheese. It even works for perfect spreads like Philly cream cheese. Your guests will be impressed that you are always prepared. I received these knives at a discounted price in exchange for my honest and unbiased opinion. I am very impressed by the different shapes and function of the knives. I also think they have a very classic look.
+
+            %li
+              %img{ :src => 'img/stars.png' }
+              %span Great knives!
+              %p Gorgeous cheese knives set! I've never owned a set of cheese knives, but after deciding to host more friends and family gatherings at my house, I've wanted to step up my game and look a little more classy with cheese plates. These knives really fit the bill, they are high quality, very sturdy and easy to use and clean. Looking forward to hosting more parties with these soon! I received this product at a discount price in exchange for my honest review.
+
+
+
 
     .fat-black-line
       .container
